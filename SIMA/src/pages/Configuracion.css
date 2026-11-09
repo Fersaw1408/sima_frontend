@@ -1,0 +1,124 @@
+
+.configuracion-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+.configuracion-header {
+    margin-bottom: 25px;
+}
+
+.configuracion-header h1 {
+    color: #087e8b;
+    margin-bottom: 8px;
+}
+
+.configuracion-header p {
+    color: #666;
+}
+
+.configuracion-formulario {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.configuracion-opcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.configuracion-opcion h3 {
+    margin: 0 0 7px;
+    color: #333;
+}
+
+.configuracion-opcion p {
+    margin: 0;
+    color: #777;
+}
+
+.configuracion-opcion input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #087e8b;
+}
+
+.configuracion-opcion select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.configuracion-guardar {
+    margin-top: 25px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #087e8b;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.configuracion-guardar:hover {
+    background: #066570;
+}
+
+.configuracion-guardar:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.configuracion-mensaje {
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 7px;
+    background: #e8f5f5;
+    color: #087e8b;
+}
+
+.configuracion-oscura {
+    background: #202b35;
+    color: white;
+}
+
+.configuracion-oscura .configuracion-header p {
+    color: #ddd;
+}
+
+.configuracion-oscura .configuracion-formulario {
+    background: #2d3a46;
+}
+
+.configuracion-oscura .configuracion-opcion h3 {
+    color: white;
+}
+
+.configuracion-oscura .configuracion-opcion p {
+    color: #ddd;
+}
+
+.configuracion-oscura .configuracion-opcion {
+    border-bottom-color: #52606d;
+}
+
+@media (max-width: 600px) {
+    .configuracion-container {
+        padding: 15px;
+    }
+
+    .configuracion-opcion {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

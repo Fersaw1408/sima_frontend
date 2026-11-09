@@ -1,0 +1,16 @@
+
+.volver-dashboard {
+    display: inline-block;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    background: #087e8b;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.volver-dashboard:hover {
+    background: #066570;
+}
