@@ -1,0 +1,98 @@
+
+.lecturas-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    color: #263238;
+}
+
+.lecturas-header {
+    margin-bottom: 25px;
+}
+
+.lecturas-header h1 {
+    margin-bottom: 8px;
+    color: #087e8b;
+}
+
+.lecturas-header p {
+    color: #64748b;
+}
+
+.lecturas-resumen {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.lecturas-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.lecturas-card h3 {
+    margin-bottom: 12px;
+    color: #64748b;
+    font-size: 16px;
+}
+
+.lecturas-card strong {
+    font-size: 27px;
+    color: #087e8b;
+}
+
+.lecturas-tabla {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+.lecturas-tabla h2 {
+    margin-bottom: 20px;
+}
+
+.lecturas-tabla table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lecturas-tabla th,
+.lecturas-tabla td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.lecturas-tabla th {
+    background: #f1f7f8;
+    color: #087e8b;
+}
+
+.lecturas-tabla tr:hover {
+    background: #f8fafc;
+}
+
+.lecturas-error {
+    color: #dc2626;
+}
+
+@media (max-width: 600px) {
+    .lecturas-container {
+        width: 95%;
+    }
+
+    .lecturas-tabla {
+        padding: 15px;
+    }
+
+    .lecturas-tabla th,
+    .lecturas-tabla td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}

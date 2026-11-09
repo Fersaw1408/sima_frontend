@@ -1,0 +1,15 @@
+# Dependencias
+node_modules/
+**/node_modules/
+
+# Archivos generados
+dist/
+**/dist/
+
+# Variables de entorno
+.env
+.env.*
+
+# Archivos duplicados accidentales de la raiz
+/package.json
+/package-lock.json
