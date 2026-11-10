@@ -1,0 +1,580 @@
+/* =========================================
+   ESTILOS GENERALES DE LOS MÓDULOS
+========================================= */
+
+.alertas-container,
+.consumo-container,
+.lecturas-container,
+.medidores-container,
+.facturacion-container,
+.notificaciones-container,
+.configuracion-container,
+.reportes-container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 35px 0 60px;
+  color: var(--sima-text);
+  text-align: left;
+  animation: sima-entrada 0.4s ease;
+}
+
+@keyframes sima-entrada {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   ENCABEZADOS
+========================================= */
+
+.alertas-header,
+.lecturas-header,
+.medidores-header,
+.facturacion-header,
+.notificaciones-header,
+.configuracion-header,
+.reportes-header {
+  margin: 25px 0 30px;
+}
+
+.alertas-header h1,
+.consumo-container > h1,
+.lecturas-header h1,
+.medidores-header h1,
+.facturacion-header h1,
+.notificaciones-header h1,
+.configuracion-header h1,
+.reportes-header h1 {
+  margin: 0 0 8px;
+  font-size: clamp(26px, 4vw, 34px);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.alertas-header p,
+.consumo-container > p,
+.lecturas-header p,
+.medidores-header p,
+.facturacion-header p,
+.notificaciones-header p,
+.configuracion-header p,
+.reportes-header p {
+  color: var(--sima-muted);
+  margin: 0;
+  font-size: 15px;
+}
+
+/* =========================================
+   TARJETAS DE RESUMEN
+========================================= */
+
+.alertas-resumen,
+.consumo-resumen,
+.lecturas-resumen,
+.medidores-resumen,
+.facturacion-resumen,
+.notificaciones-resumen,
+.reportes-resumen {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+  margin: 28px 0;
+}
+
+.alertas-card,
+.consumo-card,
+.lecturas-card,
+.medidor-resumen-card,
+.facturacion-card,
+.notificacion-resumen-card,
+.reporte-resumen-card {
+  background: var(--sima-white);
+  border: 1px solid var(--sima-border);
+  border-radius: var(--sima-radius);
+  padding: 24px;
+  box-shadow: var(--sima-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.alertas-card:hover,
+.consumo-card:hover,
+.lecturas-card:hover,
+.medidor-resumen-card:hover,
+.facturacion-card:hover,
+.notificacion-resumen-card:hover,
+.reporte-resumen-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(19, 57, 75, 0.11);
+}
+
+.alertas-card h3,
+.consumo-card h3,
+.lecturas-card h3,
+.medidor-resumen-card h3,
+.facturacion-card h3 {
+  color: var(--sima-muted);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.alertas-card strong,
+.consumo-card strong,
+.lecturas-card strong,
+.medidor-resumen-card strong,
+.facturacion-card strong,
+.notificacion-resumen-card strong,
+.reporte-resumen-card strong {
+  color: var(--sima-primary-dark);
+  display: block;
+  font-family: 'Manrope', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* =========================================
+   PANELES Y LISTADOS
+========================================= */
+
+.alertas-listado,
+.consumo-tabla,
+.lecturas-tabla,
+.facturacion-listado,
+.notificaciones-listado,
+.reporte-listado {
+  background: var(--sima-white);
+  border: 1px solid var(--sima-border);
+  border-radius: var(--sima-radius);
+  padding: 25px;
+  margin-top: 25px;
+  box-shadow: var(--sima-shadow);
+  overflow: hidden;
+}
+
+.alertas-listado h2,
+.consumo-tabla h2,
+.lecturas-tabla h2,
+.facturacion-listado h2,
+.notificaciones-listado h2,
+.reporte-listado h2 {
+  font-size: 19px;
+  margin: 0 0 22px;
+}
+
+/* =========================================
+   TABLAS
+========================================= */
+
+.alertas-tabla-contenedor,
+.reporte-tabla-contenedor,
+.facturacion-tabla-contenedor {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 10px;
+}
+
+.alertas-tabla-contenedor table,
+.consumo-tabla table,
+.lecturas-tabla table,
+.reporte-tabla,
+.facturacion-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+  text-align: left;
+}
+
+.alertas-tabla-contenedor th,
+.consumo-tabla th,
+.lecturas-tabla th,
+.reporte-tabla th,
+.facturacion-tabla th {
+  background: #f0f7f8;
+  color: var(--sima-primary-dark);
+  padding: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.alertas-tabla-contenedor td,
+.consumo-tabla td,
+.lecturas-tabla td,
+.reporte-tabla td,
+.facturacion-tabla td {
+  padding: 15px;
+  border-bottom: 1px solid var(--sima-border);
+  color: #4d6373;
+  font-size: 14px;
+}
+
+.alertas-tabla-contenedor tbody tr:hover,
+.consumo-tabla tbody tr:hover,
+.lecturas-tabla tbody tr:hover,
+.reporte-tabla tbody tr:hover,
+.facturacion-tabla tbody tr:hover {
+  background: #f8fbfc;
+}
+
+.alertas-tabla-contenedor tbody tr:last-child td,
+.consumo-tabla tbody tr:last-child td,
+.lecturas-tabla tbody tr:last-child td,
+.reporte-tabla tbody tr:last-child td,
+.facturacion-tabla tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* =========================================
+   ESTADOS
+========================================= */
+
+.alerta-estado,
+.medidor-estado,
+.factura-pagada,
+.factura-pendiente,
+.notificacion-leida,
+.notificacion-no-leida {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 11px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.alerta-pendiente,
+.factura-pendiente,
+.notificacion-no-leida {
+  color: #a9680b;
+  background: #fff4dc;
+}
+
+.alerta-resuelta,
+.factura-pagada,
+.notificacion-leida {
+  color: #14734e;
+  background: #e2f5eb;
+}
+
+.alerta-activa {
+  color: #b53b3b;
+  background: #fdeaea;
+}
+
+/* =========================================
+   FORMULARIOS
+========================================= */
+
+.reporte-formulario,
+.facturacion-formulario,
+.notificaciones-formulario,
+.configuracion-formulario {
+  background: var(--sima-white);
+  border: 1px solid var(--sima-border);
+  border-radius: var(--sima-radius);
+  padding: 28px;
+  margin: 25px 0;
+  box-shadow: var(--sima-shadow);
+}
+
+.reporte-formulario h2,
+.facturacion-formulario h2,
+.notificaciones-formulario h2,
+.configuracion-formulario h2 {
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+
+.reporte-formulario form,
+.facturacion-formulario form,
+.notificaciones-formulario form,
+.configuracion-formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reporte-formulario label,
+.facturacion-formulario label,
+.notificaciones-formulario label,
+.configuracion-formulario label {
+  color: #40596a;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.reporte-formulario input,
+.reporte-formulario textarea,
+.reporte-formulario select,
+.facturacion-formulario input,
+.facturacion-formulario textarea,
+.facturacion-formulario select,
+.notificaciones-formulario input,
+.notificaciones-formulario textarea,
+.notificaciones-formulario select,
+.configuracion-formulario input,
+.configuracion-formulario textarea,
+.configuracion-formulario select {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid var(--sima-border);
+  border-radius: 10px;
+  background: #fbfdfe;
+  color: var(--sima-text);
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.reporte-formulario input:focus,
+.reporte-formulario textarea:focus,
+.reporte-formulario select:focus,
+.facturacion-formulario input:focus,
+.facturacion-formulario select:focus,
+.notificaciones-formulario input:focus,
+.notificaciones-formulario select:focus,
+.configuracion-formulario input:focus,
+.configuracion-formulario select:focus {
+  border-color: var(--sima-accent);
+  box-shadow: 0 0 0 3px rgba(25, 167, 181, 0.12);
+}
+
+.reporte-formulario textarea,
+.facturacion-formulario textarea,
+.notificaciones-formulario textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+/* Opciones de configuración */
+
+.configuracion-opcion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 17px;
+  border: 1px solid var(--sima-border);
+  border-radius: 12px;
+  margin: 12px 0;
+  background: #fbfdfe;
+}
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.reporte-formulario button,
+.facturacion-formulario button,
+.notificaciones-formulario button,
+.configuracion-guardar,
+.reporte-acciones button,
+.facturacion-acciones button,
+.notificacion-acciones button,
+.notificacion-botones button {
+  border: none;
+  border-radius: 9px;
+  padding: 11px 17px;
+  background: var(--sima-primary);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.reporte-formulario button:hover,
+.facturacion-formulario button:hover,
+.notificaciones-formulario button:hover,
+.configuracion-guardar:hover,
+.reporte-acciones button:hover,
+.facturacion-acciones button:hover,
+.notificacion-acciones button:hover {
+  background: var(--sima-primary-dark);
+  transform: translateY(-1px);
+}
+
+.reporte-formulario-botones,
+.facturacion-botones,
+.notificacion-botones,
+.reporte-acciones,
+.facturacion-acciones,
+.notificacion-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.reporte-formulario .reporte-cancelar,
+.facturacion-formulario .facturacion-cancelar,
+.notificaciones-formulario .notificacion-cancelar {
+  background: #e9eff2;
+  color: #526777;
+}
+
+.reporte-acciones .reporte-eliminar,
+.facturacion-acciones .factura-eliminar,
+.notificacion-acciones .notificacion-eliminar {
+  background: #fff0f0;
+  color: #c13e3e;
+}
+
+.reporte-acciones .reporte-editar,
+.facturacion-acciones .factura-editar {
+  background: var(--sima-soft);
+  color: var(--sima-primary-dark);
+}
+
+/* =========================================
+   MEDIDORES
+========================================= */
+
+.medidores-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.medidor-card {
+  background: white;
+  border: 1px solid var(--sima-border);
+  border-radius: var(--sima-radius);
+  padding: 24px;
+  box-shadow: var(--sima-shadow);
+  transition: transform 0.2s;
+}
+
+.medidor-card:hover {
+  transform: translateY(-4px);
+}
+
+.medidor-icono {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: var(--sima-soft);
+  border-radius: 14px;
+  color: var(--sima-primary);
+  font-size: 24px;
+}
+
+.medidor-informacion {
+  margin-top: 15px;
+}
+
+/* =========================================
+   NOTIFICACIONES
+========================================= */
+
+.notificaciones-lista {
+  display: grid;
+  gap: 15px;
+}
+
+.notificacion-card {
+  background: white;
+  border: 1px solid var(--sima-border);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: var(--sima-shadow);
+}
+
+.notificacion-card-titulo {
+  font-weight: 700;
+  color: var(--sima-text);
+}
+
+.notificacion-card-contenido {
+  color: var(--sima-muted);
+  font-size: 14px;
+}
+
+/* =========================================
+   MENSAJES Y ESTADOS VACÍOS
+========================================= */
+
+.alertas-error,
+.lecturas-error,
+.reporte-error,
+.auth-error {
+  color: #b83232;
+  background: #fff0f0;
+  border: 1px solid #f6d2d2;
+  border-radius: 9px;
+  padding: 12px 15px;
+}
+
+.configuracion-mensaje,
+.notificaciones-mensaje {
+  padding: 13px 15px;
+  border-radius: 9px;
+  background: var(--sima-soft);
+  color: var(--sima-primary-dark);
+  margin-top: 15px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+  .alertas-container,
+  .consumo-container,
+  .lecturas-container,
+  .medidores-container,
+  .facturacion-container,
+  .notificaciones-container,
+  .configuracion-container,
+  .reportes-container {
+    width: calc(100% - 28px);
+    padding-top: 22px;
+  }
+
+  .alertas-listado,
+  .consumo-tabla,
+  .lecturas-tabla,
+  .facturacion-listado,
+  .notificaciones-listado,
+  .reporte-listado,
+  .reporte-formulario,
+  .facturacion-formulario,
+  .notificaciones-formulario,
+  .configuracion-formulario {
+    padding: 17px;
+  }
+
+  .alertas-resumen,
+  .consumo-resumen,
+  .lecturas-resumen,
+  .medidores-resumen,
+  .facturacion-resumen,
+  .notificaciones-resumen,
+  .reportes-resumen {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .alertas-card,
+  .consumo-card,
+  .lecturas-card,
+  .medidor-resumen-card,
+  .facturacion-card,
+  .notificacion-resumen-card,
+  .reporte-resumen-card {
+    padding: 19px;
+  }
+
+  .configuracion-opcion {
+    align-items: flex-start;
+  }
+}
