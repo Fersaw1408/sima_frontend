@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { obtenerLecturas } from '../services/lecturas';
 import VolverDashboard from '../components/VolverDashboard';
-import './Lecturas.css';
+import '../css/Lecturas.css';
 
 function Lecturas() {
     const [lecturas, setLecturas] = useState([]);

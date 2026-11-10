@@ -6,7 +6,7 @@ import {
     actualizarConfiguracion
 } from "../services/configuracion";
 import VolverDashboard from "../components/VolverDashboard";
-import "./Configuracion.css";
+import "../css/Configuracion.css";
 
 function Configuracion() {
     const [id, setId] = useState(null);

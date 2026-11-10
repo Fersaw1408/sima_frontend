@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { obtenerMedidores } from '../services/medidores';
 import VolverDashboard from '../components/VolverDashboard';
-import './Medidores.css';
+import '../css/Medidores.css';
 
 function Medidores() {
     const [medidores, setMedidores] = useState([]);

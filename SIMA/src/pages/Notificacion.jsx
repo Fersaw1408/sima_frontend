@@ -8,7 +8,7 @@ import {
 } from "../services/notificacion";
 
 import VolverDashboard from "../components/VolverDashboard";
-import "./Notificacion.css";
+import "../css/Notificacion.css";
 
 function Notificaciones() {
     const [notificaciones, setNotificaciones] = useState([]);

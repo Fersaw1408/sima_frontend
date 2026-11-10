@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { registrar } from '../services/auth';
-import './Auth.css';
+import '../css/Auth.css';
 
 function Registro() {
     const navigate = useNavigate();

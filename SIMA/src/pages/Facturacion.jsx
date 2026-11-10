@@ -8,7 +8,7 @@ import {
 } from "../services/facturacion";
 
 import VolverDashboard from "../components/VolverDashboard";
-import "./Facturacion.css";
+import "../css/Facturacion.css";
 
 function Facturacion() {
     const [facturas, setFacturas] = useState([]);

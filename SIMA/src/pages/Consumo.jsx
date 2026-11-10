@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { obtenerConsumos } from '../services/consumo';
 import VolverDashboard from '../components/VolverDashboard';
-import './Consumo.css';
+import '../css/Consumo.css';
 
 function Consumo() {
     const [consumos, setConsumos] = useState([]);

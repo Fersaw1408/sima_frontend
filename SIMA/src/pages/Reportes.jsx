@@ -8,7 +8,7 @@ import {
 } from "../services/reportes";
 
 import VolverDashboard from "../components/VolverDashboard";
-import "./Reportes.css";
+import "../css/Reportes.css";
 
 function Reportes() {
     const [reportes, setReportes] = useState([]);

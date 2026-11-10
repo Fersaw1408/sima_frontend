@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { obtenerAlertas } from '../services/alertas';
 import VolverDashboard from '../components/VolverDashboard';
-import './Alertas.css';
+import '../css/Alertas.css';
 
 function Alertas() {
     const [alertas, setAlertas] = useState([]);
