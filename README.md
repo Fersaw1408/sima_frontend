@@ -1,1 +1,1 @@
-# sima_frontend
+Despliegue de producción SIMA
